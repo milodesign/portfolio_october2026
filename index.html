@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Camilo Morales — Diseñador gráfico, diseñador editorial y de identidad visual</title>
+
+    <!-- Metadatos de descripción -->
+    <meta
+      name="description"
+      content="Portfolio profesional de Camilo Morales, diseñador gráfico especializado en diseño editorial, maquetación, creación de portadas, branding e identidad visual."
+    >
+    <meta name="author" content="Camilo Morales">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Camillo Morales — Diseñador gráfico y editorial">
+    <meta
+      property="og:description"
+      content="Diseñador gráfico especializado en diseño editorial, maquetación, portadas, branding e identidad visual."
+    >
+    <meta property="og:url" content="https://www.example.com/">
+    <meta
+      property="og:image"
+      content="https://www.example.com/01_assets/01_img/02_profile/camilo_portrait.jpg"
+    >
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Camilo Morales — Diseñador gráfico y editorial">
+    <meta
+      name="twitter:description"
+      content="Diseñador gráfico especializado en diseño editorial, maquetación, portadas, branding e identidad visual."
+    >
+
+    <!-- Geist: tipografía recomendada por la documentación oficial de Bootstrap (guides/quickstart) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap"
+      rel="stylesheet"
+    >
+
+    <!-- Bootstrap CSS, versión 6.0.0-alpha.1, CDN oficial verificados -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+      crossorigin="anonymous"
+    >
+    <!-- Estilos propios: se cargan después para poder sobrescribir lo necesario -->
+    <link rel="stylesheet" href="01_assets/02_css/style.css">
+
+    <!-- Bootstrap JS bundle (incluye el drawer usado por el menú móvil) -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script propio: cierra el menú móvil al elegir un enlace -->
+    <script src="01_assets/03_js/script.js" defer></script>
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Saltar al contenido</a>
+
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-body border-bottom"
+        aria-label="Navegación principal"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#top">Camilo Morales</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="drawer"
+            data-bs-target="#main-menu"
+            aria-controls="main-menu"
+            aria-expanded="false"
+            aria-label="Abrir menú"
+          >
+            <span class="navbar-toggler-icon" aria-hidden="true"></span>
+          </button>
+          <!-- Menú móvil: el componente drawer de Bootstrap -->
+          <dialog
+            class="drawer drawer-end"
+            id="main-menu"
+            data-bs-theme="light"
+            aria-labelledby="main-menu-title"
+            tabindex="-1"
+          >
+            <div class="drawer-header">
+              <p class="drawer-title" id="main-menu-title">Menú</p>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="drawer"
+                aria-label="Cerrar menú"
+              ></button>
+            </div>
+            <div class="drawer-body">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#proyectos">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#experiencia">Experiencia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#habilidades">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </dialog>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- Hero -->
+      <section class="hero" id="top" aria-labelledby="hero-titulo">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-1">
+              <p class="hero-kicker">Diseñador gráfico · Editorial · Identidad visual</p>
+              <h1 id="hero-titulo">Camilo Morales</h1>
+              <p class="hero-lead">
+                Diseñador gráfico, especializado en
+                <strong>diseño editorial</strong>,
+                <strong>maquetación</strong> y <strong>creación de portadas</strong>
+                e identidad visual.
+              </p>
+              <p class="hero-text">
+                Con más de tres años de experiencia, Camilo combina una sólida
+                base en la composición tipográfica con una mirada orientada al
+                contenido digital: desde publicaciones impresas y digitales
+                hasta piezas para campañas visuales.
+              </p>
+              <div class="hero-actions">
+                <a class="btn-accent" href="#proyectos">Ver proyectos</a>
+                <a class="btn-ghost" href="#contacto">Contactar</a>
+              </div>
+            </div>
+            <div class="col-lg-6 order-lg-2">
+              <img
+                class="hero-portrait"
+                src="01_assets/01_img/02_profile/camilo_portrait.jpg"
+                alt="Retrato de Camilo Morales"
+                width="667"
+                height="643"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sobre mí -->
+      <section class="section" id="sobre-mi" aria-labelledby="sobre-mi-titulo">
+        <div class="container">
+          <h2 class="section-title" id="sobre-mi-titulo">Sobre mí</h2>
+          <p class="lead">
+            Camilo Morales es diseñador gráfico con más de tres años de
+            experiencia. Se especializa en el diseño editorial: maquetación,
+            composición tipográfica y creación de portadas. Su trabajo abarca
+            también la identidad visual y el branding, así como el diseño de
+            contenido digital en formatos impresos y digitales.
+          </p>
+          <p class="section-text">
+            Complementariamente, Camilo edita vídeo y motion graphics, y
+            desarrolla ilustraciones como parte de sus proyectos de
+            identidad visual. Su formación y sus habilidades se detallan en
+            la sección de habilidades.
+          </p>
+          <p class="section-text">
+            <strong>Formación:</strong> Escuela de Diseño ESDIMA, Madrid;
+            Edutin Academy; Google Actívate, Marketing Digital.
+          </p>
+          <p class="section-text">
+            <strong>Idiomas:</strong> español nativo; inglés con nivel B2.
+          </p>
+        </div>
+      </section>
+
+      <!-- Proyectos -->
+      <section class="section" id="proyectos" aria-labelledby="proyectos-titulo">
+        <div class="container">
+          <h2 class="section-title" id="proyectos-titulo">Proyectos seleccionados</h2>
+          <p class="lead">
+            Una selección de los trabajos más relevantes de Camilo, organizados
+            por especialidad: diseño editorial, portadas, contenido digital y
+            branding.
+          </p>
+          <div class="projects-grid">
+            <article class="project-card">
+              <img
+                class="project-card-image"
+                src="01_assets/01_img/03_gallery/socialreview_magazine_back_spine_cover_mockup.jpg"
+                alt="Portada y contraportada de la revista Social Review"
+              />
+              <div class="project-card-body">
+                <p class="project-card-category">Diseño editorial</p>
+                <h3 class="project-card-title">Social Review Magazine</h3>
+                <p class="project-card-description">
+                  Portada y contraportada de la revista Social Review, incluyendo
+                  el diseño del lomo.
+                </p>
+                <p class="project-card-tools"><strong>Herramientas:</strong> Adobe InDesign, Adobe Illustrator, Adobe Photoshop</p>
+              </div>
+            </article>
+            <article class="project-card">
+              <img
+                class="project-card-image"
+                src="01_assets/01_img/03_gallery/triumph_catalog_pages0809.jpg"
+                alt="Páginas de catálogo de Triumph"
+              />
+              <div class="project-card-body">
+                <p class="project-card-category">Contenido digital</p>
+                <h3 class="project-card-title">Triumph Catalog</h3>
+                <p class="project-card-description">
+                  Diseño de las páginas del catálogo Triumph.
+                </p>
+                <p class="project-card-tools"><strong>Herramientas:</strong> Adobe InDesign, Adobe Illustrator, Adobe Photoshop</p>
+              </div>
+            </article>
+            <article class="project-card">
+              <img
+                class="project-card-image"
+                src="01_assets/01_img/03_gallery/oppenheimer_magazine_mockup.jpg"
+                alt="Maqueta de la revista especial Oppenheimer"
+              />
+              <div class="project-card-body">
+                <p class="project-card-category">Diseño editorial</p>
+                <h3 class="project-card-title">Oppenheimer — Special Edition Magazine Layout</h3>
+                <p class="project-card-description">
+                  Maqueta y diseño de la revista especial Oppenheimer.
+                </p>
+                <p class="project-card-tools"><strong>Herramientas:</strong> Adobe InDesign, Adobe Illustrator, Adobe Photoshop</p>
+              </div>
+            </article>
+            <article class="project-card">
+              <img
+                class="project-card-image"
+                src="01_assets/01_img/03_gallery/themurdersintheroumorgue_book_cover_mockup.jpg"
+                alt="Portada del libro Los Crimenes de La Calle Morgue"
+              />
+              <div class="project-card-body">
+                <p class="project-card-category">Diseño de portadas</p>
+                <h3 class="project-card-title">Los Crimenes de La Calle Morgue</h3>
+                <p class="project-card-description">
+                  Portada del libro Los Crimenes de La Calle Morgue.
+                </p>
+                <p class="project-card-tools"><strong>Herramientas:</strong> Adobe InDesign, Adobe Illustrator, Adobe Photoshop</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experiencia profesional -->
+      <section class="section" id="experiencia" aria-labelledby="experiencia-titulo">
+        <div class="container">
+          <h2 class="section-title" id="experiencia-titulo">Experiencia profesional</h2>
+          <ul class="experience-list">
+            <li class="experience-item">
+              <div class="experience-meta">
+                <h3 class="experience-title">Diseñador editorial freelance</h3>
+                <p class="experience-period">Desde diciembre de 2024</p>
+              </div>
+              <p class="experience-description">
+                Diseño editorial y maquetación de publicaciones impresas y
+                digitales, así como dirección de arte y arte final. Atiende a
+                clientes de Latinoamérica y Norteamérica.
+              </p>
+            </li>
+            <li class="experience-item">
+              <div class="experience-meta">
+                <h3 class="experience-title">Ilustrador de identidad visual</h3>
+                <p class="experience-period">Entre diciembre de 2024 y abril de 2026</p>
+              </div>
+              <p class="experience-company">Epic Sports · Kansas, Estados Unidos</p>
+              <p class="experience-description">
+                Ilustración de identidad visual para Epic Sports: desarrollo de
+                la identidad visual y los recursos gráficos que la sustentan.
+              </p>
+            </li>
+            <li class="experience-item">
+              <div class="experience-meta">
+                <h3 class="experience-title">Diseñador gráfico de contenido digital freelance</h3>
+                <p class="experience-period">Entre enero y diciembre de 2024</p>
+              </div>
+              <p class="experience-description">
+                Diseño de contenido digital, incluyendo maquetación de
+                publicaciones digitales y piezas para campañas visuales.
+              </p>
+            </li>
+            <li class="experience-item">
+              <div class="experience-meta">
+                <h3 class="experience-title">Diseñador gráfico</h3>
+                <p class="experience-period">Entre septiembre de 2021 y septiembre de 2022</p>
+              </div>
+              <p class="experience-company">Pasteur Laboratorios Clínicos</p>
+              <p class="experience-description">
+                Diseño gráfico para un cliente del sector clínico.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Habilidades y herramientas -->
+      <section class="section" id="habilidades" aria-labelledby="habilidades-titulo">
+        <div class="container">
+          <h2 class="section-title" id="habilidades-titulo">Habilidades y herramientas</h2>
+          <div class="skills-grid">
+            <div class="skills-block">
+              <h3>Diseño editorial</h3>
+              <ul class="skills-list">
+                <li>Diseño editorial y maquetación</li>
+                <li>Tipografía y narrativa visual</li>
+                <li>Dirección de arte</li>
+                <li>Arte final y preimpresión</li>
+                <li>Diseño de portadas</li>
+              </ul>
+            </div>
+            <div class="skills-block">
+              <h3>Identidad visual y branding</h3>
+              <ul class="skills-list">
+                <li>Branding e identidad visual</li>
+              </ul>
+            </div>
+            <div class="skills-block">
+              <h3>Diseño digital y contenido</h3>
+              <ul class="skills-list">
+                <li>Diseño de contenido digital</li>
+                <li>Fotografía</li>
+              </ul>
+            </div>
+            <div class="skills-block">
+              <h3>Vídeo y motion graphics</h3>
+              <ul class="skills-list">
+                <li>Edición de vídeo y motion graphics</li>
+              </ul>
+            </div>
+            <div class="skills-block">
+              <h3>Herramientas y software</h3>
+              <ul class="skills-list">
+                <li>Adobe InDesign</li>
+                <li>Adobe Illustrator</li>
+                <li>Adobe Photoshop</li>
+                <li>Adobe Premiere Pro</li>
+                <li>After Effects</li>
+                <li>DaVinci Resolve</li>
+                <li>Canva</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <section class="section" id="contacto" aria-labelledby="contacto-titulo">
+        <div class="container">
+          <h2 class="section-title" id="contacto-titulo">Contacto</h2>
+          <p class="lead">Estoy abierto a conversar sobre proyectos editoriales, branding, diseño visual y contenido digital.</p>
+          <p class="section-text">
+            Puedes escribirme a
+            <a href="mailto:klomorales19@gmail.com">klomorales19@gmail.com</a>,
+            llamarme al
+            <a href="tel:677168725">677168725</a>, o seguir mi trabajo en
+            Behance y LinkedIn:
+          </p>
+          <ul class="contact-list">
+            <li>
+              <a
+                href="https://www.behance.net/camilomoralesx"
+                target="_blank"
+                rel="noopener"
+                >Behance</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/camilomorales"
+                target="_blank"
+                rel="noopener"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Llamada a la acción final -->
+      <section class="cta-final" aria-labelledby="cta-titulo">
+        <div class="container">
+          <h2 class="section-title section-title-invert" id="cta-titulo">Disponibilidad para nuevos proyectos</h2>
+          <p>
+            Estoy disponible para proyectos editoriales, portadas, branding,
+            identidad visual y contenido digital. Si tienes un proyecto en
+            mente, estaré encantado de conversar.
+          </p>
+          <a class="btn-accent" href="#contacto">Iniciar contacto</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p class="footer-note">&copy; Camilo Morales</p>
+        <p class="footer-links">
+          <a href="#top">Volver arriba</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Datos estructurados de persona (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Camilo Morales",
+        "url": "https://www.example.com/",
+        "jobTitle": "Diseñador gráfico y editorial",
+        "description": "Diseñador gráfico con más de tres años de experiencia, especializado en diseño editorial, maquetación, creación de portadas, identidad visual y contenido digital.",
+        "knowsAbout": [
+          "Diseño editorial",
+          "Maquetación",
+          "Tipografía",
+          "Dirección de arte",
+          "Identidad visual",
+          "Branding",
+          "Diseño de portadas",
+          "Diseño de contenido digital",
+          "Fotografía",
+          "Edición de vídeo"
+        ],
+        "sameAs": [
+          "https://www.behance.net/camilomoralesx",
+          "https://www.linkedin.com/in/camilomorales"
+        ],
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Escuela de Diseño ESDIMA"
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Edutin Academy"
+          }
+        ]
+      }
+    </script>
+  </body>
+</html>
